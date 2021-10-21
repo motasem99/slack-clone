@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className='app'>
-      <h1>Let's build slack!</h1>;
+      <Router>
+        <Fragment>
+          <Switch>
+            <Route exact path='/'>
+              <Header />
+            </Route>
+          </Switch>
+        </Fragment>
+      </Router>
     </div>
   );
 }
