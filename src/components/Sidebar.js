@@ -32,7 +32,7 @@ const SideBar = () => {
           <h2>Mutasem HQ</h2>
           <h3>
             <FiberManualRecordIcon />
-            Mutasem Kwaik
+            {user?.displayName}
           </h3>
         </SidebarInfo>
         <CreateIcon />
